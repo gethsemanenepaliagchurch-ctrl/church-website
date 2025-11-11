@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gethsemane Nepali A.G Church</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/fb2a8ed230941119eda81702e94168ba" alt="Gethsemane Nepali A.G Church">
+                    <div class="logo-text">
+                        <h1>Gethsemane Nepali A.G Church</h1>
+                        <p>Serving the Nepali Community in Bangalore</p>
+                    </div>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="pastors.html">Pastors</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <!-- Pastors -->
+                    <div class="contact-info-card">
+                        <h4><i class="fas fa-user-tie"></i> Our Pastors</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Senior Pastor</strong>
+                                Ps. Eprahim Gurung<br>
+                                <a href="tel:+917204516832" style="color: var(--primary-orange); text-decoration: none;">+91-7204516832</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Junior Pastor</strong>
+                                Ps. David Gurung<br>
+                                <a href="tel:+917019878500" style="color: var(--primary-orange); text-decoration: none;">+91-7019878500</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Church -->
+                    <div class="contact-info-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Main Church</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-church"></i>
+                            <div>
+                                <strong>Address</strong>
+                                SGR Dental College Campus<br>
+                                Marathahalli, Bangalore - 560037
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="far fa-clock"></i>
+                            <div>
+                                <strong>Service Times</strong>
+                                Sunday: 7:00 AM - 8:45 AM<br>
+                                Tuesday: 8:00 PM - 9:30 PM<br>
+                                Saturday: 8:00 PM - 9:30 PM
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Branch Church -->
+                    <div class="contact-info-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Branch Church</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-church"></i>
+                            <div>
+                                <strong>Address</strong>
+                                Petra Pebbles, Sarjapur Road<br>
+                                Mullur, Bangalore - 560035
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="far fa-clock"></i>
+                            <div>
+                                <strong>Service Time</strong>
+                                Sunday: 10:00 AM - 12:00 PM
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connect Online -->
+                    <div class="contact-info-card">
+                        <h4><i class="fas fa-share-alt"></i> Connect Online</h4>
+                        <div style="display: flex; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                            <a href="#" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; transition: transform var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <i class="fab fa-facebook fa-lg"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; transition: transform var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; transition: transform var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); text-decoration: none; transition: transform var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section style="background-color: var(--light-gray); padding: var(--spacing-2xl) 0;">
+        <div class="container">
+            <h2 class="section-title">Quick Contact</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); max-width: 900px; margin: 0 auto;">
+                <a href="tel:+917204516832" style="background: var(--white); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; text-decoration: none; transition: all var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-phone-alt" style="font-size: 1.5rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: var(--spacing-xs);">Call Senior Pastor</h4>
+                    <p style="color: var(--medium-gray);">+91-7204516832</p>
+                </a>
+
+                <a href="tel:+917019878500" style="background: var(--white); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; text-decoration: none; transition: all var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-phone-alt" style="font-size: 1.5rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: var(--spacing-xs);">Call Junior Pastor</h4>
+                    <p style="color: var(--medium-gray);">+91-7019878500</p>
+                </a>
+
+                <a href="locations.html" style="background: var(--white); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; text-decoration: none; transition: all var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-xl)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                        <i class="fas fa-map-marked-alt" style="font-size: 1.5rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: var(--spacing-xs);">Visit Our Churches</h4>
+                    <p style="color: var(--medium-gray);">Get directions</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gethsemane Nepali A.G Church</h3>
+                    <p>Serving the Nepali Community in Bangalore with love and faith</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Pastors</h4>
+                    <p><strong>Senior Pastor:</strong><br>Ps. Eprahim Gurung<br>+91-7204516832</p>
+                    <p><strong>Junior Pastor:</strong><br>Ps. David Gurung<br>+91-7019878500</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gethsemane Nepali A.G Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you soon.\n\nNote: This is a demo form. To enable actual email submission, you would need to integrate with a backend service.');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+            
+            return false;
+        }
+    </script>
+</body>
+</html>
